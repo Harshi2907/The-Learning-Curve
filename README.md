@@ -27,7 +27,6 @@
       margin: auto;
     }
     h1, h2 {
-     background: #003366;
       color: white;
     }
     .enroll-button {
