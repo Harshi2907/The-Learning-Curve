@@ -27,7 +27,7 @@
       margin: auto;
     }
     h1, h2 {
-      color: white;
+      color: #003366;
     }
     .enroll-button {
       display: inline-block;
