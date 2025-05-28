@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Learning Curve</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="https://i.ibb.co/QF8g27s/logo-rabbit.png" />
   <style>
     body {
       font-family: 'Georgia', serif;
@@ -17,31 +16,32 @@
     }
 
     header {
+      background: #003366;
+      color: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #003366;
-      color: white;
-      padding: 1rem;
-      gap: 1rem;
+      padding: 1rem 2rem;
+      text-align: center;
+      position: relative;
     }
 
-    header img {
-      width: 60px;
+    header img.logo {
+      position: absolute;
+      left: 20px;
       height: 60px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 0 6px #002244;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.2rem;
+      color: #ffffff;
     }
 
     header p {
-      margin: 0;
+      margin: 0.2rem 0 0;
       font-size: 1rem;
+      color: #e0e0e0;
     }
 
     section {
@@ -50,8 +50,7 @@
       margin: auto;
     }
 
-    h1,
-    h2 {
+    h1, h2 {
       color: #003366;
     }
 
@@ -69,8 +68,7 @@
       background-color: #004080;
     }
 
-    .testimonial,
-    .faq {
+    .testimonial, .faq {
       background: #eef3f7;
       padding: 1rem;
       margin-bottom: 1rem;
@@ -83,24 +81,37 @@
       text-align: center;
       padding: 1rem;
     }
+
+    @media screen and (max-width: 600px) {
+      header img.logo {
+        height: 40px;
+        left: 10px;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      header p {
+        font-size: 0.9rem;
+      }
+
+      section {
+        padding: 1rem;
+      }
+    }
   </style>
 </head>
 
 <body>
-
-  <!-- Header with both logos -->
   <header>
-    <!-- Rabbit Logo -->
-    <img src="https://i.ibb.co/mqfsW2m/IMG-20240528-WA0004.jpg" alt="Rabbit Logo" />
-
-    <!-- TLC Text -->
-    <div style="text-align: center;">
+    <img src="https://i.ibb.co/QF8g27s/logo-rabbit.png" alt="Rabbit Logo" class="logo" />
+    <div>
       <h1>The Learning Curve</h1>
       <p>Online and Offline Tuition for Classes KG to 12</p>
     </div>
   </header>
 
-  <!-- Welcome Section -->
   <section class="info">
     <h2>Welcome to The Learning Curve</h2>
     <p>
@@ -109,7 +120,6 @@
     <a class="enroll-button" href="https://forms.gle/AEKjxybn7GxYR7xv7" target="_blank">Enroll Now</a>
   </section>
 
-  <!-- Subjects -->
   <section class="subjects">
     <h2>Subjects Offered</h2>
     <ul>
@@ -118,7 +128,6 @@
     </ul>
   </section>
 
-  <!-- Details -->
   <section class="details">
     <h2>Timings & Class Details</h2>
     <ul>
@@ -167,7 +176,6 @@
     </p>
   </section>
 
-  <!-- Testimonials -->
   <section class="testimonials">
     <h2>What Parents & Students Say</h2>
     <div class="testimonial">
@@ -178,7 +186,6 @@
     </div>
   </section>
 
-  <!-- FAQs -->
   <section class="faqs">
     <h2>Frequently Asked Questions</h2>
     <div class="faq">
@@ -192,18 +199,14 @@
     </div>
   </section>
 
-  <!-- Contact -->
   <section class="contact">
     <h2>Contact Us</h2>
     <p>Email: thelearningcurvetlc@gmail.com</p>
     <p>Phone: 8604482492</p>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2022 The Learning Curve. All rights reserved.</p>
   </footer>
-
 </body>
-
 </html>
